@@ -10,8 +10,13 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // req.body
 const PORT = process.env.PORT || 3000;
 
-// const Person = require('./models/Person');
-// const Menuitem = require('./models/Menuitem');
+
+// Middleware Functions -----------------------------
+const logRequest = (req, res, next)=>{
+
+    
+}
+
 
 app.get('/', (req, res) => {
     res.send('Welcome to our Hotel');
